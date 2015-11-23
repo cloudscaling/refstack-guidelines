@@ -66,11 +66,11 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_addresses.AddressTest.test_associate_disassociate_standard_addresses": {},
-        "tempest.thirdparty.botocore.api.test_addresses.AddressTest.test_create_delete_standard_address": {},
-        "tempest.thirdparty.botocore.api.test_addresses.AddressTest.test_describe_standard_addresses": {},
-        "tempest.thirdparty.botocore.api.test_addresses.AddressTest.test_disassociate_not_associated_standard_addresses": {},
-        "tempest.thirdparty.botocore.api.test_addresses.AddressTest.test_invalid_create_address": {}
+        "ec2api.tests.functional.api.test_addresses.AddressTest.test_associate_disassociate_standard_addresses": {},
+        "ec2api.tests.functional.api.test_addresses.AddressTest.test_create_delete_standard_address": {},
+        "ec2api.tests.functional.api.test_addresses.AddressTest.test_describe_standard_addresses": {},
+        "ec2api.tests.functional.api.test_addresses.AddressTest.test_disassociate_not_associated_standard_addresses": {},
+        "ec2api.tests.functional.api.test_addresses.AddressTest.test_invalid_create_address": {}
       }
     },
     "aws-vpc-addresses": {
@@ -83,13 +83,13 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_addresses.AddressTest.test_associate_disassociate_vpc_addresses": {},
-        "tempest.thirdparty.botocore.api.test_addresses.AddressTest.test_create_delete_vpc_address": {},
-        "tempest.thirdparty.botocore.api.test_addresses.AddressTest.test_describe_vpc_addresses": {},
-        "tempest.thirdparty.botocore.api.test_addresses.AddressTest.test_disassociate_not_associated_vpc_addresses": {},
-        "tempest.thirdparty.botocore.api.test_addresses.AddressTest.test_invalid_delete_vpc_address": {},
-        "tempest.thirdparty.botocore.api.test_addresses.AddressTest.test_preliminary_associate_address": {},
-        "tempest.thirdparty.botocore.scenario.test_vpc_addresses.VpcAddressTest.test_auto_diassociate_address": {}
+        "ec2api.tests.functional.api.test_addresses.AddressTest.test_associate_disassociate_vpc_addresses": {},
+        "ec2api.tests.functional.api.test_addresses.AddressTest.test_create_delete_vpc_address": {},
+        "ec2api.tests.functional.api.test_addresses.AddressTest.test_describe_vpc_addresses": {},
+        "ec2api.tests.functional.api.test_addresses.AddressTest.test_disassociate_not_associated_vpc_addresses": {},
+        "ec2api.tests.functional.api.test_addresses.AddressTest.test_invalid_delete_vpc_address": {},
+        "ec2api.tests.functional.api.test_addresses.AddressTest.test_preliminary_associate_address": {},
+        "ec2api.tests.functional.scenario.test_vpc_addresses.VpcAddressTest.test_auto_diassociate_address": {}
       }
     },
     "aws-vpn-customer-gateways": {
@@ -102,7 +102,7 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_customer_gateways.CustomerGatewayTest.test_create_delete_customer_gateway": {}
+        "ec2api.tests.functional.api.test_customer_gateways.CustomerGatewayTest.test_create_delete_customer_gateway": {}
       }
     },
     "aws-vpc-dhcp-options": {
@@ -115,10 +115,10 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_dhcp_options.DhcpOptionsTest.test_associate_dhcp_options": {},
-        "tempest.thirdparty.botocore.api.test_dhcp_options.DhcpOptionsTest.test_create_delete_dhcp_options": {},
-        "tempest.thirdparty.botocore.api.test_dhcp_options.DhcpOptionsTest.test_describe_dhcp_options": {},
-        "tempest.thirdparty.botocore.api.test_dhcp_options.DhcpOptionsTest.test_invalid_create_delete": {}
+        "ec2api.tests.functional.api.test_dhcp_options.DhcpOptionsTest.test_associate_dhcp_options": {},
+        "ec2api.tests.functional.api.test_dhcp_options.DhcpOptionsTest.test_create_delete_dhcp_options": {},
+        "ec2api.tests.functional.api.test_dhcp_options.DhcpOptionsTest.test_describe_dhcp_options": {},
+        "ec2api.tests.functional.api.test_dhcp_options.DhcpOptionsTest.test_invalid_create_delete": {}
       }
     },
     "aws-images": {
@@ -131,15 +131,15 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_images.ImageTest.test_check_bdm_in_image": {},
-        "tempest.thirdparty.botocore.api.test_images.ImageTest.test_check_ebs_image_type": {},
-        "tempest.thirdparty.botocore.api.test_images.ImageTest.test_check_ebs_image_volume_properties": {},
-        "tempest.thirdparty.botocore.api.test_images.ImageTest.test_check_image_operations_negative": {},
-        "tempest.thirdparty.botocore.api.test_images.ImageTest.test_check_launch_permission_attribute": {},
-        "tempest.thirdparty.botocore.api.test_images.ImageTest.test_check_simple_image_attributes": {},
-        "tempest.thirdparty.botocore.api.test_images.ImageTest.test_create_image_from_ebs_instance": {},
-        "tempest.thirdparty.botocore.api.test_images.ImageTest.test_create_image_from_non_ebs_instance": {},
-        "tempest.thirdparty.botocore.api.test_images.ImageTest.test_describe_image_with_filters": {}
+        "ec2api.tests.functional.api.test_images.ImageTest.test_check_bdm_in_image": {},
+        "ec2api.tests.functional.api.test_images.ImageTest.test_check_ebs_image_type": {},
+        "ec2api.tests.functional.api.test_images.ImageTest.test_check_ebs_image_volume_properties": {},
+        "ec2api.tests.functional.api.test_images.ImageTest.test_check_image_operations_negative": {},
+        "ec2api.tests.functional.api.test_images.ImageTest.test_check_launch_permission_attribute": {},
+        "ec2api.tests.functional.api.test_images.ImageTest.test_check_simple_image_attributes": {},
+        "ec2api.tests.functional.api.test_images.ImageTest.test_create_image_from_ebs_instance": {},
+        "ec2api.tests.functional.api.test_images.ImageTest.test_create_image_from_non_ebs_instance": {},
+        "ec2api.tests.functional.api.test_images.ImageTest.test_describe_image_with_filters": {}
       }
     },
     "aws-instance-attributes": {
@@ -152,13 +152,13 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_instance_attributes.InstanceAttributeTest.test_attributes_for_multiple_interfaces_negative": {},
-        "tempest.thirdparty.botocore.api.test_instance_attributes.InstanceAttributeTest.test_describe_instance_attributes": {},
-        "tempest.thirdparty.botocore.api.test_instance_attributes.InstanceAttributeTest.test_disable_api_termination_attribute": {},
-        "tempest.thirdparty.botocore.api.test_instance_attributes.InstanceAttributeTest.test_group_set_attribute": {},
-        "tempest.thirdparty.botocore.api.test_instance_attributes.InstanceAttributeTest.test_instance_attributes_negative": {},
-        "tempest.thirdparty.botocore.api.test_instance_attributes.InstanceAttributeTest.test_instance_type_attribute": {},
-        "tempest.thirdparty.botocore.api.test_instance_attributes.InstanceAttributeTest.test_source_dest_check_attribute": {}
+        "ec2api.tests.functional.api.test_instance_attributes.InstanceAttributeTest.test_attributes_for_multiple_interfaces_negative": {},
+        "ec2api.tests.functional.api.test_instance_attributes.InstanceAttributeTest.test_describe_instance_attributes": {},
+        "ec2api.tests.functional.api.test_instance_attributes.InstanceAttributeTest.test_disable_api_termination_attribute": {},
+        "ec2api.tests.functional.api.test_instance_attributes.InstanceAttributeTest.test_group_set_attribute": {},
+        "ec2api.tests.functional.api.test_instance_attributes.InstanceAttributeTest.test_instance_attributes_negative": {},
+        "ec2api.tests.functional.api.test_instance_attributes.InstanceAttributeTest.test_instance_type_attribute": {},
+        "ec2api.tests.functional.api.test_instance_attributes.InstanceAttributeTest.test_source_dest_check_attribute": {}
       }
     },
     "aws-instances": {
@@ -171,15 +171,15 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_instances.InstanceTest.test_create_delete_instance": {},
-        "tempest.thirdparty.botocore.api.test_instances.InstanceTest.test_create_idempotent_instance": {},
-        "tempest.thirdparty.botocore.api.test_instances.InstanceTest.test_describe_instances_filter": {},
-        "tempest.thirdparty.botocore.api.test_instances.InstanceTest.test_get_password_data_and_console_output": {},
-        "tempest.thirdparty.botocore.api.test_instances.InstanceTest.test_public_ip_is_assigned": {},
-        "tempest.thirdparty.botocore.api.test_instances.InstanceTest.test_stop_instance": {},
-        "tempest.thirdparty.botocore.scenario.test_instance_restart.InstanceRestartTest.test_reboot_instance": {},
-        "tempest.thirdparty.botocore.scenario.test_instances.InstancesTest.test_compare_console_output": {},
-        "tempest.thirdparty.botocore.scenario.test_instances.InstancesTest.test_userdata": {}
+        "ec2api.tests.functional.api.test_instances.InstanceTest.test_create_delete_instance": {},
+        "ec2api.tests.functional.api.test_instances.InstanceTest.test_create_idempotent_instance": {},
+        "ec2api.tests.functional.api.test_instances.InstanceTest.test_describe_instances_filter": {},
+        "ec2api.tests.functional.api.test_instances.InstanceTest.test_get_password_data_and_console_output": {},
+        "ec2api.tests.functional.api.test_instances.InstanceTest.test_public_ip_is_assigned": {},
+        "ec2api.tests.functional.api.test_instances.InstanceTest.test_stop_instance": {},
+        "ec2api.tests.functional.scenario.test_instance_restart.InstanceRestartTest.test_reboot_instance": {},
+        "ec2api.tests.functional.scenario.test_instances.InstancesTest.test_compare_console_output": {},
+        "ec2api.tests.functional.scenario.test_instances.InstancesTest.test_userdata": {}
       }
     },
     "aws-vpc-instances": {
@@ -192,9 +192,9 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.scenario.test_instances_in_vpc.InstancesInVPCTest.test_default_gateway": {},
-        "tempest.thirdparty.botocore.scenario.test_instances_in_vpc.InstancesInVPCTest.test_instances_in_max_subnet": {},
-        "tempest.thirdparty.botocore.scenario.test_instances_in_vpc.InstancesInVPCTest.test_instances_in_min_subnet": {}
+        "ec2api.tests.functional.scenario.test_instances_in_vpc.InstancesInVPCTest.test_default_gateway": {},
+        "ec2api.tests.functional.scenario.test_instances_in_vpc.InstancesInVPCTest.test_instances_in_max_subnet": {},
+        "ec2api.tests.functional.scenario.test_instances_in_vpc.InstancesInVPCTest.test_instances_in_min_subnet": {}
       }
     },
     "aws-ebs-instances": {
@@ -207,21 +207,21 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_instances_ebs.InstanceWithEBSTest.test_create_get_delete_ebs_instance": {},
-        "tempest.thirdparty.botocore.api.test_instances_ebs.InstanceWithEBSTest.test_create_root_volume_snapshot": {},
-        "tempest.thirdparty.botocore.api.test_instances_vpc.InstanceInVPCTest.test_create_delete_instance": {},
-        "tempest.thirdparty.botocore.api.test_instances_vpc.InstanceInVPCTest.test_create_instance_with_invalid_params": {},
-        "tempest.thirdparty.botocore.api.test_instances_vpc.InstanceInVPCTest.test_create_instance_with_private_ip": {},
-        "tempest.thirdparty.botocore.api.test_instances_vpc.InstanceInVPCTest.test_create_instance_with_two_interfaces": {},
-        "tempest.thirdparty.botocore.api.test_instances_vpc.InstanceInVPCTest.test_describe_instances_filter": {},
-        "tempest.thirdparty.botocore.scenario.test_ebs_instances.EC2_EBSInstanceAttaching.test_attaching_by_full_name": {},
-        "tempest.thirdparty.botocore.scenario.test_ebs_instances.EC2_EBSInstanceAttaching.test_attaching_by_short_name": {},
-        "tempest.thirdparty.botocore.scenario.test_ebs_instances.EC2_EBSInstanceResizeRootDevice.test_resize_root_ebs_device": {},
-        "tempest.thirdparty.botocore.scenario.test_ebs_instances.EC2_EBSInstanceSnapshot.test_create_ebs_instance_snapshot": {},
-        "tempest.thirdparty.botocore.scenario.test_ebs_instances.EC2_EBSInstanceTuneBDM.test_launch_ebs_instance_with_creating_blank_volume": {},
-        "tempest.thirdparty.botocore.scenario.test_ebs_instances.EC2_EBSInstanceTuneBDM.test_launch_ebs_instance_with_persistent_root_device": {},
-        "tempest.thirdparty.botocore.scenario.test_ebs_instances.EC2_EBSInstanceTuneBDM.test_launch_ebs_instance_with_resized_root_device": {},
-        "tempest.thirdparty.botocore.scenario.test_instance_restart.InstanceRestartTest.test_stop_start_instance": {}
+        "ec2api.tests.functional.api.test_instances_ebs.InstanceWithEBSTest.test_create_get_delete_ebs_instance": {},
+        "ec2api.tests.functional.api.test_instances_ebs.InstanceWithEBSTest.test_create_root_volume_snapshot": {},
+        "ec2api.tests.functional.api.test_instances_vpc.InstanceInVPCTest.test_create_delete_instance": {},
+        "ec2api.tests.functional.api.test_instances_vpc.InstanceInVPCTest.test_create_instance_with_invalid_params": {},
+        "ec2api.tests.functional.api.test_instances_vpc.InstanceInVPCTest.test_create_instance_with_private_ip": {},
+        "ec2api.tests.functional.api.test_instances_vpc.InstanceInVPCTest.test_create_instance_with_two_interfaces": {},
+        "ec2api.tests.functional.api.test_instances_vpc.InstanceInVPCTest.test_describe_instances_filter": {},
+        "ec2api.tests.functional.scenario.test_ebs_instances.EC2_EBSInstanceAttaching.test_attaching_by_full_name": {},
+        "ec2api.tests.functional.scenario.test_ebs_instances.EC2_EBSInstanceAttaching.test_attaching_by_short_name": {},
+        "ec2api.tests.functional.scenario.test_ebs_instances.EC2_EBSInstanceResizeRootDevice.test_resize_root_ebs_device": {},
+        "ec2api.tests.functional.scenario.test_ebs_instances.EC2_EBSInstanceSnapshot.test_create_ebs_instance_snapshot": {},
+        "ec2api.tests.functional.scenario.test_ebs_instances.EC2_EBSInstanceTuneBDM.test_launch_ebs_instance_with_creating_blank_volume": {},
+        "ec2api.tests.functional.scenario.test_ebs_instances.EC2_EBSInstanceTuneBDM.test_launch_ebs_instance_with_persistent_root_device": {},
+        "ec2api.tests.functional.scenario.test_ebs_instances.EC2_EBSInstanceTuneBDM.test_launch_ebs_instance_with_resized_root_device": {},
+        "ec2api.tests.functional.scenario.test_instance_restart.InstanceRestartTest.test_stop_start_instance": {}
       }
     },
     "aws-vpc-internet-gateways": {
@@ -234,13 +234,13 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_internet_gateways.InternetGatewayTest.test_attach_detach_invalid_internet_gateway": {},
-        "tempest.thirdparty.botocore.api.test_internet_gateways.InternetGatewayTest.test_attach_one_internet_gateway_to_two_vpcs": {},
-        "tempest.thirdparty.botocore.api.test_internet_gateways.InternetGatewayTest.test_create_attach_internet_gateway": {},
-        "tempest.thirdparty.botocore.api.test_internet_gateways.InternetGatewayTest.test_delete_attached_internet_gateway": {},
-        "tempest.thirdparty.botocore.api.test_internet_gateways.InternetGatewayTest.test_describe_internet_gateways_base": {},
-        "tempest.thirdparty.botocore.api.test_internet_gateways.InternetGatewayTest.test_describe_internet_gateways_filters": {},
-        "tempest.thirdparty.botocore.api.test_internet_gateways.InternetGatewayTest.test_double_attach_internet_gateway": {}
+        "ec2api.tests.functional.api.test_internet_gateways.InternetGatewayTest.test_attach_detach_invalid_internet_gateway": {},
+        "ec2api.tests.functional.api.test_internet_gateways.InternetGatewayTest.test_attach_one_internet_gateway_to_two_vpcs": {},
+        "ec2api.tests.functional.api.test_internet_gateways.InternetGatewayTest.test_create_attach_internet_gateway": {},
+        "ec2api.tests.functional.api.test_internet_gateways.InternetGatewayTest.test_delete_attached_internet_gateway": {},
+        "ec2api.tests.functional.api.test_internet_gateways.InternetGatewayTest.test_describe_internet_gateways_base": {},
+        "ec2api.tests.functional.api.test_internet_gateways.InternetGatewayTest.test_describe_internet_gateways_filters": {},
+        "ec2api.tests.functional.api.test_internet_gateways.InternetGatewayTest.test_double_attach_internet_gateway": {}
       }
     },
     "aws-keypairs": {
@@ -253,12 +253,12 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_key_pairs.KeyPairTest.test_create_delete_key_pair": {},
-        "tempest.thirdparty.botocore.api.test_key_pairs.KeyPairTest.test_create_duplicate_key_pair": {},
-        "tempest.thirdparty.botocore.api.test_key_pairs.KeyPairTest.test_describe_key_pairs": {},
-        "tempest.thirdparty.botocore.api.test_key_pairs.KeyPairTest.test_import_empty_key_pair": {},
-        "tempest.thirdparty.botocore.api.test_key_pairs.KeyPairTest.test_import_invalid_key_pair": {},
-        "tempest.thirdparty.botocore.api.test_key_pairs.KeyPairTest.test_import_key_pair": {}
+        "ec2api.tests.functional.api.test_key_pairs.KeyPairTest.test_create_delete_key_pair": {},
+        "ec2api.tests.functional.api.test_key_pairs.KeyPairTest.test_create_duplicate_key_pair": {},
+        "ec2api.tests.functional.api.test_key_pairs.KeyPairTest.test_describe_key_pairs": {},
+        "ec2api.tests.functional.api.test_key_pairs.KeyPairTest.test_import_empty_key_pair": {},
+        "ec2api.tests.functional.api.test_key_pairs.KeyPairTest.test_import_invalid_key_pair": {},
+        "ec2api.tests.functional.api.test_key_pairs.KeyPairTest.test_import_key_pair": {}
       }
     },
     "aws-vpc-network-interfaces": {
@@ -271,21 +271,21 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_network_interfaces.NetworkInterfaceTest.test_assign_unassign_private_addresses_by_addresses": {},
-        "tempest.thirdparty.botocore.api.test_network_interfaces.NetworkInterfaceTest.test_assign_unassign_private_addresses_by_count": {},
-        "tempest.thirdparty.botocore.api.test_network_interfaces.NetworkInterfaceTest.test_attach_network_interface": {},
-        "tempest.thirdparty.botocore.api.test_network_interfaces.NetworkInterfaceTest.test_create_max_network_interface": {},
-        "tempest.thirdparty.botocore.api.test_network_interfaces.NetworkInterfaceTest.test_create_network_interface": {},
-        "tempest.thirdparty.botocore.api.test_network_interfaces.NetworkInterfaceTest.test_delete_subnet_with_network_interface": {},
-        "tempest.thirdparty.botocore.api.test_network_interfaces.NetworkInterfaceTest.test_instance_attributes_negative": {},
-        "tempest.thirdparty.botocore.api.test_network_interfaces.NetworkInterfaceTest.test_network_interface_attribute_attachment": {},
-        "tempest.thirdparty.botocore.api.test_network_interfaces.NetworkInterfaceTest.test_network_interface_attribute_description": {},
-        "tempest.thirdparty.botocore.api.test_network_interfaces.NetworkInterfaceTest.test_network_interface_attribute_empty_attachment": {},
-        "tempest.thirdparty.botocore.api.test_network_interfaces.NetworkInterfaceTest.test_network_interface_attribute_group_set": {},
-        "tempest.thirdparty.botocore.api.test_network_interfaces.NetworkInterfaceTest.test_network_interface_attribute_source_dest_check": {},
-        "tempest.thirdparty.botocore.api.test_network_interfaces.NetworkInterfaceTest.test_network_interfaces_are_deleted_on_termination": {},
-        "tempest.thirdparty.botocore.api.test_network_interfaces.NetworkInterfaceTest.test_network_interfaces_are_not_deleted_on_termination": {},
-        "tempest.thirdparty.botocore.api.test_network_interfaces.NetworkInterfaceTest.test_unassign_primary_addresses": {}
+        "ec2api.tests.functional.api.test_network_interfaces.NetworkInterfaceTest.test_assign_unassign_private_addresses_by_addresses": {},
+        "ec2api.tests.functional.api.test_network_interfaces.NetworkInterfaceTest.test_assign_unassign_private_addresses_by_count": {},
+        "ec2api.tests.functional.api.test_network_interfaces.NetworkInterfaceTest.test_attach_network_interface": {},
+        "ec2api.tests.functional.api.test_network_interfaces.NetworkInterfaceTest.test_create_max_network_interface": {},
+        "ec2api.tests.functional.api.test_network_interfaces.NetworkInterfaceTest.test_create_network_interface": {},
+        "ec2api.tests.functional.api.test_network_interfaces.NetworkInterfaceTest.test_delete_subnet_with_network_interface": {},
+        "ec2api.tests.functional.api.test_network_interfaces.NetworkInterfaceTest.test_instance_attributes_negative": {},
+        "ec2api.tests.functional.api.test_network_interfaces.NetworkInterfaceTest.test_network_interface_attribute_attachment": {},
+        "ec2api.tests.functional.api.test_network_interfaces.NetworkInterfaceTest.test_network_interface_attribute_description": {},
+        "ec2api.tests.functional.api.test_network_interfaces.NetworkInterfaceTest.test_network_interface_attribute_empty_attachment": {},
+        "ec2api.tests.functional.api.test_network_interfaces.NetworkInterfaceTest.test_network_interface_attribute_group_set": {},
+        "ec2api.tests.functional.api.test_network_interfaces.NetworkInterfaceTest.test_network_interface_attribute_source_dest_check": {},
+        "ec2api.tests.functional.api.test_network_interfaces.NetworkInterfaceTest.test_network_interfaces_are_deleted_on_termination": {},
+        "ec2api.tests.functional.api.test_network_interfaces.NetworkInterfaceTest.test_network_interfaces_are_not_deleted_on_termination": {},
+        "ec2api.tests.functional.api.test_network_interfaces.NetworkInterfaceTest.test_unassign_primary_addresses": {}
       }
     },
     "aws-regions": {
@@ -298,8 +298,8 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_regions.RegionTest.test_describe_regions": {},
-        "tempest.thirdparty.botocore.api.test_regions.RegionTest.test_describe_zones": {}
+        "ec2api.tests.functional.api.test_regions.RegionTest.test_describe_regions": {},
+        "ec2api.tests.functional.api.test_regions.RegionTest.test_describe_zones": {}
       }
     },
     "aws-vpc-routes": {
@@ -312,12 +312,12 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_routes.RouteTest.test_associate_disassociate_route_table": {},
-        "tempest.thirdparty.botocore.api.test_routes.RouteTest.test_create_delete_route": {},
-        "tempest.thirdparty.botocore.api.test_routes.RouteTest.test_create_delete_route_table": {},
-        "tempest.thirdparty.botocore.api.test_routes.RouteTest.test_describe_route_tables_base": {},
-        "tempest.thirdparty.botocore.api.test_routes.RouteTest.test_describe_route_tables_filters": {},
-        "tempest.thirdparty.botocore.api.test_routes.RouteTest.test_replace_route_table": {}
+        "ec2api.tests.functional.api.test_routes.RouteTest.test_associate_disassociate_route_table": {},
+        "ec2api.tests.functional.api.test_routes.RouteTest.test_create_delete_route": {},
+        "ec2api.tests.functional.api.test_routes.RouteTest.test_create_delete_route_table": {},
+        "ec2api.tests.functional.api.test_routes.RouteTest.test_describe_route_tables_base": {},
+        "ec2api.tests.functional.api.test_routes.RouteTest.test_describe_route_tables_filters": {},
+        "ec2api.tests.functional.api.test_routes.RouteTest.test_replace_route_table": {}
       }
     },
     "aws-ec2-classic-security-groups": {
@@ -330,11 +330,11 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_security_groups.SecurityGroupEC2ClassicTest.test_create_delete_security_group": {},
-        "tempest.thirdparty.botocore.api.test_security_groups.SecurityGroupEC2ClassicTest.test_create_duplicate_security_group": {},
-        "tempest.thirdparty.botocore.api.test_security_groups.SecurityGroupEC2ClassicTest.test_create_invalid_name_desc": {},
-        "tempest.thirdparty.botocore.api.test_security_groups.SecurityGroupEC2ClassicTest.test_egress_rules": {},
-        "tempest.thirdparty.botocore.api.test_security_groups.SecurityGroupEC2ClassicTest.test_ingress_rules": {}
+        "ec2api.tests.functional.api.test_security_groups.SecurityGroupEC2ClassicTest.test_create_delete_security_group": {},
+        "ec2api.tests.functional.api.test_security_groups.SecurityGroupEC2ClassicTest.test_create_duplicate_security_group": {},
+        "ec2api.tests.functional.api.test_security_groups.SecurityGroupEC2ClassicTest.test_create_invalid_name_desc": {},
+        "ec2api.tests.functional.api.test_security_groups.SecurityGroupEC2ClassicTest.test_egress_rules": {},
+        "ec2api.tests.functional.api.test_security_groups.SecurityGroupEC2ClassicTest.test_ingress_rules": {}
       }
     },
     "aws-vpc-security-groups": {
@@ -347,12 +347,12 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_security_groups.SecurityGroupInVPCTest.test_create_delete_security_group": {},
-        "tempest.thirdparty.botocore.api.test_security_groups.SecurityGroupInVPCTest.test_create_duplicate_security_group": {},
-        "tempest.thirdparty.botocore.api.test_security_groups.SecurityGroupInVPCTest.test_create_duplicate_security_group_in_another_vpc": {},
-        "tempest.thirdparty.botocore.api.test_security_groups.SecurityGroupInVPCTest.test_create_invalid_name_desc": {},
-        "tempest.thirdparty.botocore.api.test_security_groups.SecurityGroupInVPCTest.test_egress_rules": {},
-        "tempest.thirdparty.botocore.api.test_security_groups.SecurityGroupInVPCTest.test_ingress_rules": {}
+        "ec2api.tests.functional.api.test_security_groups.SecurityGroupInVPCTest.test_create_delete_security_group": {},
+        "ec2api.tests.functional.api.test_security_groups.SecurityGroupInVPCTest.test_create_duplicate_security_group": {},
+        "ec2api.tests.functional.api.test_security_groups.SecurityGroupInVPCTest.test_create_duplicate_security_group_in_another_vpc": {},
+        "ec2api.tests.functional.api.test_security_groups.SecurityGroupInVPCTest.test_create_invalid_name_desc": {},
+        "ec2api.tests.functional.api.test_security_groups.SecurityGroupInVPCTest.test_egress_rules": {},
+        "ec2api.tests.functional.api.test_security_groups.SecurityGroupInVPCTest.test_ingress_rules": {}
       }
     },
     "aws-snapshots": {
@@ -365,11 +365,11 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_snapshots.SnapshotTest.test_create_delete_snapshot": {},
-        "tempest.thirdparty.botocore.api.test_snapshots.SnapshotTest.test_create_increased_volume_from_snapshot": {},
-        "tempest.thirdparty.botocore.api.test_snapshots.SnapshotTest.test_create_volume_from_snapshot": {},
-        "tempest.thirdparty.botocore.api.test_snapshots.SnapshotTest.test_delete_volume_with_snapshots": {},
-        "tempest.thirdparty.botocore.api.test_snapshots.SnapshotTest.test_describe_snapshots": {}
+        "ec2api.tests.functional.api.test_snapshots.SnapshotTest.test_create_delete_snapshot": {},
+        "ec2api.tests.functional.api.test_snapshots.SnapshotTest.test_create_increased_volume_from_snapshot": {},
+        "ec2api.tests.functional.api.test_snapshots.SnapshotTest.test_create_volume_from_snapshot": {},
+        "ec2api.tests.functional.api.test_snapshots.SnapshotTest.test_delete_volume_with_snapshots": {},
+        "ec2api.tests.functional.api.test_snapshots.SnapshotTest.test_describe_snapshots": {}
       }
     },
     "aws-vpc-subnets": {
@@ -382,12 +382,12 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_subnets.SubnetTest.test_create_delete_subnet": {},
-        "tempest.thirdparty.botocore.api.test_subnets.SubnetTest.test_create_overlapped_subnet": {},
-        "tempest.thirdparty.botocore.api.test_subnets.SubnetTest.test_create_subnet_invalid_cidr": {},
-        "tempest.thirdparty.botocore.api.test_subnets.SubnetTest.test_dependency_subnet_to_vpc": {},
-        "tempest.thirdparty.botocore.api.test_subnets.SubnetTest.test_describe_subnets_base": {},
-        "tempest.thirdparty.botocore.api.test_subnets.SubnetTest.test_describe_subnets_filters": {}
+        "ec2api.tests.functional.api.test_subnets.SubnetTest.test_create_delete_subnet": {},
+        "ec2api.tests.functional.api.test_subnets.SubnetTest.test_create_overlapped_subnet": {},
+        "ec2api.tests.functional.api.test_subnets.SubnetTest.test_create_subnet_invalid_cidr": {},
+        "ec2api.tests.functional.api.test_subnets.SubnetTest.test_dependency_subnet_to_vpc": {},
+        "ec2api.tests.functional.api.test_subnets.SubnetTest.test_describe_subnets_base": {},
+        "ec2api.tests.functional.api.test_subnets.SubnetTest.test_describe_subnets_filters": {}
       }
     },
     "aws-tags": {
@@ -400,23 +400,23 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_tags.TagTest.test_create_get_delete_tag": {},
-        "tempest.thirdparty.botocore.api.test_tags.TagTest.test_describe_tags": {},
-        "tempest.thirdparty.botocore.api.test_tags.TagTest.test_tag_address": {},
-        "tempest.thirdparty.botocore.api.test_tags.TagTest.test_tag_customer_gateway": {},
-        "tempest.thirdparty.botocore.api.test_tags.TagTest.test_tag_dhcp_options": {},
-        "tempest.thirdparty.botocore.api.test_tags.TagTest.test_tag_image": {},
-        "tempest.thirdparty.botocore.api.test_tags.TagTest.test_tag_instance": {},
-        "tempest.thirdparty.botocore.api.test_tags.TagTest.test_tag_internet_gateway": {},
-        "tempest.thirdparty.botocore.api.test_tags.TagTest.test_tag_network_interface": {},
-        "tempest.thirdparty.botocore.api.test_tags.TagTest.test_tag_route_table": {},
-        "tempest.thirdparty.botocore.api.test_tags.TagTest.test_tag_security_group": {},
-        "tempest.thirdparty.botocore.api.test_tags.TagTest.test_tag_snapshot": {},
-        "tempest.thirdparty.botocore.api.test_tags.TagTest.test_tag_subnet": {},
-        "tempest.thirdparty.botocore.api.test_tags.TagTest.test_tag_volume": {},
-        "tempest.thirdparty.botocore.api.test_tags.TagTest.test_tag_vpc": {},
-        "tempest.thirdparty.botocore.api.test_tags.TagTest.test_tag_vpn_connection": {},
-        "tempest.thirdparty.botocore.api.test_tags.TagTest.test_tag_vpn_gateway": {}
+        "ec2api.tests.functional.api.test_tags.TagTest.test_create_get_delete_tag": {},
+        "ec2api.tests.functional.api.test_tags.TagTest.test_describe_tags": {},
+        "ec2api.tests.functional.api.test_tags.TagTest.test_tag_address": {},
+        "ec2api.tests.functional.api.test_tags.TagTest.test_tag_customer_gateway": {},
+        "ec2api.tests.functional.api.test_tags.TagTest.test_tag_dhcp_options": {},
+        "ec2api.tests.functional.api.test_tags.TagTest.test_tag_image": {},
+        "ec2api.tests.functional.api.test_tags.TagTest.test_tag_instance": {},
+        "ec2api.tests.functional.api.test_tags.TagTest.test_tag_internet_gateway": {},
+        "ec2api.tests.functional.api.test_tags.TagTest.test_tag_network_interface": {},
+        "ec2api.tests.functional.api.test_tags.TagTest.test_tag_route_table": {},
+        "ec2api.tests.functional.api.test_tags.TagTest.test_tag_security_group": {},
+        "ec2api.tests.functional.api.test_tags.TagTest.test_tag_snapshot": {},
+        "ec2api.tests.functional.api.test_tags.TagTest.test_tag_subnet": {},
+        "ec2api.tests.functional.api.test_tags.TagTest.test_tag_volume": {},
+        "ec2api.tests.functional.api.test_tags.TagTest.test_tag_vpc": {},
+        "ec2api.tests.functional.api.test_tags.TagTest.test_tag_vpn_connection": {},
+        "ec2api.tests.functional.api.test_tags.TagTest.test_tag_vpn_gateway": {}
       }
     },
     "aws-volumes": {
@@ -429,15 +429,15 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_volumes.VolumeTest.test_attach_detach_volume": {},
-        "tempest.thirdparty.botocore.api.test_volumes.VolumeTest.test_attaching_stage": {},
-        "tempest.thirdparty.botocore.api.test_volumes.VolumeTest.test_create_delete_volume": {},
-        "tempest.thirdparty.botocore.api.test_volumes.VolumeTest.test_create_encrypted_volume": {},
-        "tempest.thirdparty.botocore.api.test_volumes.VolumeTest.test_delete_detach_attached_volume": {},
-        "tempest.thirdparty.botocore.api.test_volumes.VolumeTest.test_describe_volume_status": {},
-        "tempest.thirdparty.botocore.api.test_volumes.VolumeTest.test_describe_volumes": {},
-        "tempest.thirdparty.botocore.api.test_volumes.VolumeTest.test_volume_auto_termination_swithed_off": {},
-        "tempest.thirdparty.botocore.api.test_volumes.VolumeTest.test_volume_auto_termination_swithed_on": {}
+        "ec2api.tests.functional.api.test_volumes.VolumeTest.test_attach_detach_volume": {},
+        "ec2api.tests.functional.api.test_volumes.VolumeTest.test_attaching_stage": {},
+        "ec2api.tests.functional.api.test_volumes.VolumeTest.test_create_delete_volume": {},
+        "ec2api.tests.functional.api.test_volumes.VolumeTest.test_create_encrypted_volume": {},
+        "ec2api.tests.functional.api.test_volumes.VolumeTest.test_delete_detach_attached_volume": {},
+        "ec2api.tests.functional.api.test_volumes.VolumeTest.test_describe_volume_status": {},
+        "ec2api.tests.functional.api.test_volumes.VolumeTest.test_describe_volumes": {},
+        "ec2api.tests.functional.api.test_volumes.VolumeTest.test_volume_auto_termination_swithed_off": {},
+        "ec2api.tests.functional.api.test_volumes.VolumeTest.test_volume_auto_termination_swithed_on": {}
       }
     },
     "aws-vpcs": {
@@ -450,16 +450,16 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_vpcs.VPCTest.test_create_delete_vpc": {},
-        "tempest.thirdparty.botocore.api.test_vpcs.VPCTest.test_create_more_than_one_vpc": {},
-        "tempest.thirdparty.botocore.api.test_vpcs.VPCTest.test_create_with_invalid_cidr": {},
-        "tempest.thirdparty.botocore.api.test_vpcs.VPCTest.test_describe_invalid_attributes": {},
-        "tempest.thirdparty.botocore.api.test_vpcs.VPCTest.test_describe_non_existing_vpc_by_cidr": {},
-        "tempest.thirdparty.botocore.api.test_vpcs.VPCTest.test_describe_non_existing_vpc_by_id": {},
-        "tempest.thirdparty.botocore.api.test_vpcs.VPCTest.test_describe_vpcs_base": {},
-        "tempest.thirdparty.botocore.api.test_vpcs.VPCTest.test_describe_vpcs_filters": {},
-        "tempest.thirdparty.botocore.api.test_vpcs.VPCTest.test_describe_with_invalid_filter": {},
-        "tempest.thirdparty.botocore.api.test_vpcs.VPCTest.test_vpc_attributes": {}
+        "ec2api.tests.functional.api.test_vpcs.VPCTest.test_create_delete_vpc": {},
+        "ec2api.tests.functional.api.test_vpcs.VPCTest.test_create_more_than_one_vpc": {},
+        "ec2api.tests.functional.api.test_vpcs.VPCTest.test_create_with_invalid_cidr": {},
+        "ec2api.tests.functional.api.test_vpcs.VPCTest.test_describe_invalid_attributes": {},
+        "ec2api.tests.functional.api.test_vpcs.VPCTest.test_describe_non_existing_vpc_by_cidr": {},
+        "ec2api.tests.functional.api.test_vpcs.VPCTest.test_describe_non_existing_vpc_by_id": {},
+        "ec2api.tests.functional.api.test_vpcs.VPCTest.test_describe_vpcs_base": {},
+        "ec2api.tests.functional.api.test_vpcs.VPCTest.test_describe_vpcs_filters": {},
+        "ec2api.tests.functional.api.test_vpcs.VPCTest.test_describe_with_invalid_filter": {},
+        "ec2api.tests.functional.api.test_vpcs.VPCTest.test_vpc_attributes": {}
       }
     },
     "aws-vpn-connections": {
@@ -472,8 +472,8 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_vpn_connections.VpnConnectionTest.test_create_delete_vpn_connection": {},
-        "tempest.thirdparty.botocore.api.test_vpn_connections.VpnConnectionTest.test_create_delete_vpn_connection_route": {}
+        "ec2api.tests.functional.api.test_vpn_connections.VpnConnectionTest.test_create_delete_vpn_connection": {},
+        "ec2api.tests.functional.api.test_vpn_connections.VpnConnectionTest.test_create_delete_vpn_connection_route": {}
       }
     },
     "aws-vpn-gateways": {
@@ -486,8 +486,8 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.api.test_vpn_gateways.VpnGatewayTest.test_attach_detach_vpn_gateway": {},
-        "tempest.thirdparty.botocore.api.test_vpn_gateways.VpnGatewayTest.test_create_delete_vpn_gateway": {}
+        "ec2api.tests.functional.api.test_vpn_gateways.VpnGatewayTest.test_attach_detach_vpn_gateway": {},
+        "ec2api.tests.functional.api.test_vpn_gateways.VpnGatewayTest.test_create_delete_vpn_gateway": {}
       }
     },
     "aws-paging-instances": {
@@ -500,10 +500,10 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.scenario.test_paging.InstancePagingTest.test_instances_paging": {},
-        "tempest.thirdparty.botocore.scenario.test_paging.InstancePagingTest.test_invalid_paging": {},
-        "tempest.thirdparty.botocore.scenario.test_paging.InstancePagingTest.test_simple_instances_paging_with_many_results": {},
-        "tempest.thirdparty.botocore.scenario.test_paging.InstancePagingTest.test_simple_instances_paging_with_min_results": {}
+        "ec2api.tests.functional.scenario.test_paging.InstancePagingTest.test_instances_paging": {},
+        "ec2api.tests.functional.scenario.test_paging.InstancePagingTest.test_invalid_paging": {},
+        "ec2api.tests.functional.scenario.test_paging.InstancePagingTest.test_simple_instances_paging_with_many_results": {},
+        "ec2api.tests.functional.scenario.test_paging.InstancePagingTest.test_simple_instances_paging_with_min_results": {}
       }
     },
     "aws-paging-snapshots": {
@@ -516,10 +516,10 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.scenario.test_paging.SnapshotPagingTest.test_invalid_paging": {},
-        "tempest.thirdparty.botocore.scenario.test_paging.SnapshotPagingTest.test_simple_snapshots_paging_with_many_results": {},
-        "tempest.thirdparty.botocore.scenario.test_paging.SnapshotPagingTest.test_simple_snapshots_paging_with_min_results": {},
-        "tempest.thirdparty.botocore.scenario.test_paging.SnapshotPagingTest.test_snapshots_paging": {}
+        "ec2api.tests.functional.scenario.test_paging.SnapshotPagingTest.test_invalid_paging": {},
+        "ec2api.tests.functional.scenario.test_paging.SnapshotPagingTest.test_simple_snapshots_paging_with_many_results": {},
+        "ec2api.tests.functional.scenario.test_paging.SnapshotPagingTest.test_simple_snapshots_paging_with_min_results": {},
+        "ec2api.tests.functional.scenario.test_paging.SnapshotPagingTest.test_snapshots_paging": {}
       }
     },
     "aws-paging-tags": {
@@ -532,13 +532,13 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.scenario.test_paging.TagsPagingTest.test_invalid_max_results": {},
-        "tempest.thirdparty.botocore.scenario.test_paging.TagsPagingTest.test_simple_tags_paging_with_many_results": {},
-        "tempest.thirdparty.botocore.scenario.test_paging.TagsPagingTest.test_simple_tags_paging_with_min_results": {},
-        "tempest.thirdparty.botocore.scenario.test_paging.TagsPagingTest.test_tags_paging_second_page_only_with_token": {},
-        "tempest.thirdparty.botocore.scenario.test_paging.TagsPagingTest.test_tags_paging_with_const_filter": {},
-        "tempest.thirdparty.botocore.scenario.test_paging.TagsPagingTest.test_tags_paging_with_differenet_filters": {},
-        "tempest.thirdparty.botocore.scenario.test_paging.TagsPagingTest.test_tags_paging_with_tags_deletion": {}
+        "ec2api.tests.functional.scenario.test_paging.TagsPagingTest.test_invalid_max_results": {},
+        "ec2api.tests.functional.scenario.test_paging.TagsPagingTest.test_simple_tags_paging_with_many_results": {},
+        "ec2api.tests.functional.scenario.test_paging.TagsPagingTest.test_simple_tags_paging_with_min_results": {},
+        "ec2api.tests.functional.scenario.test_paging.TagsPagingTest.test_tags_paging_second_page_only_with_token": {},
+        "ec2api.tests.functional.scenario.test_paging.TagsPagingTest.test_tags_paging_with_const_filter": {},
+        "ec2api.tests.functional.scenario.test_paging.TagsPagingTest.test_tags_paging_with_differenet_filters": {},
+        "ec2api.tests.functional.scenario.test_paging.TagsPagingTest.test_tags_paging_with_tags_deletion": {}
       }
     },
     "aws-paging-volumes": {
@@ -551,11 +551,11 @@
       "project": "ec2-api",
       "required-since": "2015.99",
       "tests": {
-        "tempest.thirdparty.botocore.scenario.test_paging.VolumesPagingTest.test_invalid_paging": {},
-        "tempest.thirdparty.botocore.scenario.test_paging.VolumesPagingTest.test_simple_volumes_paging_with_many_results": {},
-        "tempest.thirdparty.botocore.scenario.test_paging.VolumesPagingTest.test_simple_volumes_paging_with_min_results": {},
-        "tempest.thirdparty.botocore.scenario.test_paging.VolumesPagingTest.test_volumes_paging_second_page": {},
-        "tempest.thirdparty.botocore.scenario.test_paging.VolumesPagingTest.test_volumes_paging_with_filters": {}
+        "ec2api.tests.functional.scenario.test_paging.VolumesPagingTest.test_invalid_paging": {},
+        "ec2api.tests.functional.scenario.test_paging.VolumesPagingTest.test_simple_volumes_paging_with_many_results": {},
+        "ec2api.tests.functional.scenario.test_paging.VolumesPagingTest.test_simple_volumes_paging_with_min_results": {},
+        "ec2api.tests.functional.scenario.test_paging.VolumesPagingTest.test_volumes_paging_second_page": {},
+        "ec2api.tests.functional.scenario.test_paging.VolumesPagingTest.test_volumes_paging_with_filters": {}
       }
     }
   },
