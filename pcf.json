@@ -70,6 +70,7 @@
         "network-router-basic-ops",
         "network-security-group-ipv6",
         "network-security-group-ipv4",
+        "pcf",
         "volume-v1-snapshot-metadata",
         "volume-v1-volume-metadata",
         "volume-v1-volume-action",
@@ -1383,6 +1384,23 @@
         }
       }
     },
+    "pcf": {
+      "achievements": [],
+      "admin": false,
+      "description": "Tests specific requirements for deploying Pivotal Cloud Foundry on OpenStack",
+      "project": "pcftests",
+      "required-since": "",
+      "tests": {
+        "pcftests.tests.test_flavors.FlavorTest.test_flavor_create": {},
+        "pcftests.tests.test_hypervisor.HypervisorTest.test_get_hypervisor_type": {},
+        "pcftests.tests.test_images.ImagesTest.test_image_create": {},
+        "pcftests.tests.test_jumpbox_connectivity.JumpboxIpsTest.test_connectivity_to_endpoints": {},
+        "pcftests.tests.test_jumpbox_connectivity.JumpboxIpsTest.test_connectivity_to_internet": {},
+        "pcftests.tests.test_quotas.QuotasTest.test_quotas": {},
+        "pcftests.tests.test_security_groups.SecurityGroupsTest.test_create_security_groups": {},
+        "pcftests.tests.test_vms_connectivity.VmsIpsTest.test_connectivity_between_vms": {}
+      }
+    },
     "volume-v1-snapshot-metadata": {
       "achievements": [],
       "admin": false,
@@ -1883,7 +1901,14 @@
     "advisory" : {},
     "deprecated" : {},
     "removed" : {},
-    "informational" : {}
+    "informational" : {
+      "pcftests" : {
+        "guidance": "Not a core capability, no position at this time",
+        "required": false,
+        "comment": "no comments.",
+        "sections": []
+      }
+    }
   },
   "criteria": {}
 }
