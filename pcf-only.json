@@ -1,0 +1,140 @@
+{
+  "id": "2016.01",
+  "schema": "1.5",
+  "reference": "https://git.openstack.org/cgit/andrey-mp/defcore/schema/1.5.rst",
+  "source": "http://git.openstack.org/cgit/cloudscaling/defcore/",
+  "status": "draft",
+  "replaces": "",
+  "releases": ["juno", "kilo", "liberty"],
+  "target_programs": {
+    "pcfOnly": {
+      "description": "Pivotal Cloud Foundry",
+      "required": ["pcf"],
+      "advisory": [],
+      "deprecated": [],
+      "removed": []
+    }
+  },
+  "components": {
+    "pcf": {
+      "required": [
+        "pcf",
+      ],
+      "advisory": [],
+      "deprecated": [],
+      "removed": []
+    }
+  },
+  "test-repositories": {
+    "tempest": {
+      "git-sha": "master",
+       "url": "https://git.openstack.org/cgit/openstack/tempest/"
+    }
+  },
+  "capabilities": {
+    "pcf": {
+      "achievements": [],
+      "admin": false,
+      "description": "Tests specific requirements for deploying Pivotal Cloud Foundry on OpenStack",
+      "project": "pcftests",
+      "required-since": "",
+      "tests": {
+        "pcftests.tests.test_flavors.FlavorTest.test_flavor_create": {},
+        "pcftests.tests.test_hypervisor.HypervisorTest.test_get_hypervisor_type": {},
+        "pcftests.tests.test_images.ImagesTest.test_image_create": {},
+        "pcftests.tests.test_jumpbox_connectivity.JumpboxIpsTest.test_connectivity_to_endpoints": {},
+        "pcftests.tests.test_jumpbox_connectivity.JumpboxIpsTest.test_connectivity_to_internet": {},
+        "pcftests.tests.test_quotas.QuotasTest.test_quotas": {},
+        "pcftests.tests.test_security_groups.SecurityGroupsTest.test_create_security_groups": {},
+        "pcftests.tests.test_vms_connectivity.VmsIpsTest.test_connectivity_between_vms": {}
+      }
+    }
+  },
+  "designated-sections" : {
+    "required" : {
+      "nova" : {
+        "guidance": "By default, designated except scheduler, filter, drivers, API extensions and networking.",
+        "comment": "All code except driver/plugins listed.  Even for replaceable drivers or plugins, we still expect use of the existing nova service that wraps those interfaces.",
+        "sections": {
+          "scheduler driver": { "description": "(Host and cell)", "designated": false, "comment": "none provided"},
+          "filter scheduler driver": { "description": "(Host and cell)  While the line above implies the entire driver is fair game, this case is incredibly common and worth mentioning specifically.", "designated": false, "comment": "none provided"},
+          "compute driver": { "description": "not provided", "designated": false, "comment": "none provided"},
+          "rest api extensions": { "description": "may be required for capabilities", "designated": false, "comment": "none provided"},
+          "nova networking components": { "description": "not provided", "designated": false, "comment": "none provided"},
+          "nova networking drivers": { "description": "not provided", "designated": false, "comment": "none provided"}
+        }
+      },
+      "keystone" : {
+        "guidance": "Designation is outlined per API grouping. Identity (user and group) management APIs will not be designated. API access (with exception of auth) may be prohibited by policy (resulting in HTTP 403). Designated APIs include both v2.0 and v3 versions where applicable.",
+        "comment": "Specific Drivers/Plugins and Identity management code are not designated as many deployments have custom drivers and/or read-only, federated, or externally managed Identity information.",
+        "sections": {
+          "assignment API": {"description": "APIs for managing roles and assignment of roles to user(s)/group(s) for a given scope", "designated": true, "comment": "Some functionality for v2.0 is provided via the 'admin_crud' extension"},
+          "auth (v2.0) API": {"description": "'/v2.0/tokens' APIs used for v2.0 authentication and token validation/revocation/signing certificates (when PKI tokens are in use)", "designated": true, "comment": "This includes the catalog data provided as part of the token body."},
+          "auth (v3) API": {"description": "'/v3/auth' APIs used for v3 authentication and token validation/revocation", "designated": true, "comment": "This includes the catalog data provided as part of the token body and '/v3/auth/catalog'."},
+          "catalog API": {"description": "APIs for managing services, endpoints, and regions", "designated": false, "comment": "Catalog API is not designated due to the support of template catalog driver which cannot be updated via REST calls. The catalog in the token is considered part of the AUTH APIs."},
+          "credential API": {"description": "APIs for managing user credentials", "designated": false, "comment": "none provided"},
+          "drivers": {"description": "specific implementations for the keystone API backends (e.g. SQL, LDAP, etc)", "designated": false, "comment": "none provided"},
+          "ec2 API": {"description": "APIs for managing and utilizing ec2-style credentials", "designated": false, "comment": "May be required for some OpenStack features in non-keystone services"},
+          "federation API": {"description": "APIs for managing and consuming federated identity", "designated": false, "comment": "none provided"},
+          "identity API": {"description": "APIs for managing user(s) and group(s) in a read/write identity store", "designated": false, "comment": "Some functionality for v2.0 is provided via the 'admin_crud' and 'user_crud' extensions"},
+          "notifications": {"description": "CADF notifications for events (authentication, creation of resources, etc)", "designated": false, "comment": "Highly recommended and may be required for some features of OpenStack"},
+          "policy API": {"description": "APIs for managing centralized policy.json distribution for OpenStack services", "designated": false, "comment": "none provided"},
+          "trust API": {"description": "APIs for managing delegation (via trusts) of roles from one user/group to another user/group", "designated": true, "comment": "none provided"},
+          "resource API": {"description": "APIs for managing resources (projects/tenants and/or domains)", "designated": true, "comment": "In the releases prior to Kilo this is covered by the assignment API"},
+          "revoke API": {"description": "APIs for revocation event handling", "designated": false, "comment": "Highly recommended and required for Fernet (non-persistent) tokens"}
+
+        }
+      },
+      "glance": {
+        "guidance": "Designated sections are the API implementation code and domain model.",
+        "comment": "not given",
+        "sections": {
+          "http apis": { "description": "not provided", "designated": true, "comment": "API"},
+          "domain model": { "description": "not provided", "designated": true, "comment": "Shared"},
+          "stores": { "description": "the swift, filesystem, and http stores", "designated": false, "comment": "should be replaceable, vendor-specificddCross platform"},
+          "db driver": { "description": "not provided", "designated": false, "comment": "should be replaceable" },
+          "wsgi framework": { "description": "not provided", "designated": false, "comment": "should be replaceable"}
+        }
+      },
+      "cinder": {
+        "guidance": "Designated sections are the API implementation code",
+        "comment": "Historically, cinder has had plug-ins around schedulers and drivers.",
+        "sections": {
+          "api": { "description": "API section means actually the CODE that exposes the API, not just API-comparability", "designated": true, "comment": ""},
+          "drivers": { "description": "not provided", "designated": false, "comment": "there MUST be requirements that it implements what's defined as core functionality in the Cinder API"},
+          "scheduler": { "description": "not provided", "designated": false, "comment": "there MUST be requirements that it implements what's defined as core functionality in the Cinder API"},
+          "api extensions": { "description": "not provided", "designated": false, "comment": "should be replaceable"}
+        }
+      },
+      "neutron" : {
+        "guidance": "By default, designated for all code backing required capabilities except plugable components such as plugins, drivers, and API extensions other than those listed below.",
+        "required": false,
+        "comment": "Intentionally replaceable code such as network plugins, ML2 drivers, IPAM drivers, schedulers are not designated.",
+        "sections": {
+          "Scheduler drivers": { "description": "Scheduler drivers", "designated": false, "comment": "none provided"},
+          "IPAM drivers": { "description": "IPAM drivers", "designated": false, "comment": "none provided"},
+          "Network plugins": { "description": "Network backend plugins", "designated": false, "comment": "none provided"},
+          "ML2 drivers": { "description": "ML2 type and mechanism drivers", "designated": false, "comment": "none provided"},
+          "Core API and server": { "description": "Core API and server", "designated": true, "comment": "none provided"},
+          "Core API quota extension": { "description": "Quota API", "designated": true, "comment": "none provided"},
+          "Core API security group extension": { "description": "Security group API", "designated": true, "comment": "none provided"},
+          "Core API L3 extension": { "description": "L3 API for floating IPs and routers", "designated": true, "comment": "none provided"},
+          "Agents": { "description": "Agents if used by relevant driver", "designated": true, "comment": "Some drivers require the use of community-developed agents to provide required Capabilities (such as L3 networking). If a product uses such agents, they are designated."},
+          "RPC": { "description": "RPC API", "designated": true, "comment": "none provided"}
+        }
+      }
+    },
+    "advisory" : {},
+    "deprecated" : {},
+    "removed" : {},
+    "informational" : {
+      "pcftests" : {
+        "guidance": "Not a core capability, no position at this time",
+        "required": false,
+        "comment": "no comments.",
+        "sections": []
+      }
+    }
+  },
+  "criteria": {}
+}
