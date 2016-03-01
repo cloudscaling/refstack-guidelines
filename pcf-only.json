@@ -8,7 +8,7 @@
   "releases": ["juno", "kilo", "liberty"],
   "target_programs": {
     "pcfOnly": {
-      "description": "Pivotal Cloud Foundry",
+      "description": "Pivotal Cloud Foundry with PCF tests only",
       "required": ["pcf"],
       "advisory": [],
       "deprecated": [],
