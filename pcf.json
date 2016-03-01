@@ -1397,6 +1397,10 @@
         "pcftests.tests.test_jumpbox_connectivity.JumpboxIpsTest.test_connectivity_to_endpoints": {},
         "pcftests.tests.test_jumpbox_connectivity.JumpboxIpsTest.test_connectivity_to_internet": {},
         "pcftests.tests.test_quotas.QuotasTest.test_quotas": {},
+        "pcftests.tests.test_resources.ResourcesTest.test_ephemeral_or_root_disk": {},
+        "pcftests.tests.test_resources.ResourcesTest.test_resources_small_vms": {},
+        "pcftests.tests.test_resources.ResourcesTest.test_resources_large_vms": {},
+        "pcftests.tests.test_resources.ResourcesTest.test_volume_resources": {},
         "pcftests.tests.test_security_groups.SecurityGroupsTest.test_create_security_groups": {},
         "pcftests.tests.test_vms_connectivity.VmsIpsTest.test_connectivity_between_vms": {}
       }
