@@ -1,8 +1,8 @@
 {
   "id": "2016.01",
   "schema": "1.5",
-  "reference": "https://git.openstack.org/cgit/andrey-mp/defcore/schema/1.5.rst",
-  "source": "http://git.openstack.org/cgit/cloudscaling/defcore/",
+  "reference": "https://git.openstack.org/cgit/cloudscaling/refstack-guidelines/schema/1.5.rst",
+  "source": "http://git.openstack.org/cgit/cloudscaling/refstack-guidelines/",
   "status": "draft",
   "replaces": "",
   "releases": ["juno", "kilo", "liberty"],
