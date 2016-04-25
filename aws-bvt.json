@@ -7,7 +7,7 @@
   "replaces": "",
   "releases": ["kilo", "liberty"],
   "target_programs": {
-    "aws": {
+    "aws-bvt": {
       "description": "Amazon EC2 BVT",
       "required": ["aws"],
       "advisory": [],
