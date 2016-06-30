@@ -1,7 +1,7 @@
 {
   "id": "2016.01",
-  "schema": "1.5",
-  "reference": "https://git.openstack.org/cgit/cloudscaling/refstack-guidelines/schema/1.5.rst",
+  "schema": "2.0",
+  "reference": "https://git.openstack.org/cgit/cloudscaling/refstack-guidelines/schema/2.0.rst",
   "source": "http://git.openstack.org/cgit/cloudscaling/refstack-guidelines/",
   "status": "draft",
   "replaces": "",
